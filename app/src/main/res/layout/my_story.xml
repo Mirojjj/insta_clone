@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_marginRight="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginEnd="8dp">
+
+    <!-- Use FrameLayout to overlay the "+" icon -->
+    <FrameLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+
+        <!-- ImageButton (your user image) -->
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:src="@drawable/story_circle_user"/>
+
+        <!-- "+" icon positioned at bottom-right -->
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom|end"
+            android:background="@android:color/transparent"
+            android:src="@drawable/baseline_add_circle_24" />
+
+    </FrameLayout>
+
+    <!-- Text below the image -->
+    <TextView
+        android:id="@+id/my_story"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your story"
+        android:gravity="center"/>
+
+</LinearLayout>
+
