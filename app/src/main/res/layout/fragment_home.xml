@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:id="@+id/fragment_home"
+    >
 
     <LinearLayout
-        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        tools:context=".HomeFragment">
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -62,145 +65,21 @@
 
         </LinearLayout>
 
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scrollbars="none"
-            >
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:padding="16dp"
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:paddingStart="8dp"
+                android:id="@+id/story_recyclerview"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="clip_horizontal"
-                >
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginEnd="8dp">
-
-                    <!-- Use FrameLayout to overlay the "+" icon -->
-                    <FrameLayout
-                        android:layout_width="80dp"
-                        android:layout_height="80dp">
-
-                        <!-- ImageButton (your user image) -->
-                        <ImageButton
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@android:color/transparent"
-                            android:src="@drawable/story_circle_user"/>
-
-                        <!-- "+" icon positioned at bottom-right -->
-                        <ImageButton
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_gravity="bottom|end"
-                            android:background="@android:color/transparent"
-                            android:src="@drawable/baseline_add_circle_24" />
-
-                    </FrameLayout>
-
-                    <!-- Text below the image -->
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Your story"
-                        android:gravity="center"/>
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:orientation="vertical"
-                    >
-
-                    <ImageButton
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/story_circle_others"
-                        android:background="@android:color/transparent"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="kickdrip"
-                        android:gravity="center"
-                        />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:orientation="vertical"
-                    >
-
-                    <ImageButton
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/story_circle_others"
-                        android:background="@android:color/transparent"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="kickdrip"
-                        android:gravity="center"
-                        />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:orientation="vertical"
-                    >
-
-                    <ImageButton
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/story_circle_others"
-                        android:background="@android:color/transparent"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="kickdrip"
-                        android:gravity="center"
-                        />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:orientation="vertical"
-                    >
-
-                    <ImageButton
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/story_circle_others"
-                        android:background="@android:color/transparent"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="kickdrip"
-                        android:gravity="center"
-                        />
-                </LinearLayout>
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                android:layout_marginBottom="8dp"
+                />
 
 
 
 
-            </LinearLayout>
-        </HorizontalScrollView>
 
         <LinearLayout
             android:paddingTop="8dp"
@@ -210,6 +89,7 @@
             >
 
             <LinearLayout
+                android:id="@+id/news_feed"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -237,7 +117,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
-                            android:text="routuneofnepalbanda"/>
+                            android:text="routineofnepalbanda"/>
 
                     </LinearLayout>
 
