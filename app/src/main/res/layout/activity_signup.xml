@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@drawable/insta_gradient"
+    tools:context=".SignupActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/insta_txtV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginBottom="12dp"
+            android:textSize="30sp"
+            android:text="Instagram" />
+
+        <EditText
+            android:id="@+id/edit_username_signup"
+            android:background="@drawable/custom_edittext"
+            android:hint="username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:padding="12dp"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:layout_marginBottom="8dp"
+            />
+
+        <EditText
+            android:id="@+id/email_singup"
+            android:background="@drawable/custom_edittext"
+            android:layout_marginBottom="8dp"
+            android:padding="12dp"
+            android:hint="email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:maxLines="1"
+            android:inputType="textEmailAddress"
+            android:textSize="12sp"
+            />
+
+        <EditText
+            android:id="@+id/password_signup"
+            android:layout_width="match_parent"
+            android:background="@drawable/custom_edittext"
+            android:hint="password"
+            android:textSize="12sp"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:maxLines="1"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:background="@drawable/custom_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Signup" />
+    </LinearLayout>
+</LinearLayout>
